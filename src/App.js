@@ -9,9 +9,9 @@ function App() {
         <h1>
           Welcome to Web Dev!
         </h1>
-        <h2>
-          This is branch for assignment 2
-        </h2>
+        <a href="labs/a2/index.html">
+         Assignment 2
+        </a>
         <a
           className="App-link"
           href="https://reactjs.org"
