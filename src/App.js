@@ -12,6 +12,9 @@ function App() {
         <a href="labs/a2/index.html">
          Assignment 2
         </a>
+        <a href="labs/a3/index.html">
+         Assignment 3
+        </a>
         <a
           className="App-link"
           href="https://reactjs.org"
