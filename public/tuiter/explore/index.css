@@ -38,6 +38,7 @@
   padding-top: 0.5rem;
   overflow-x: hidden;
   overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  background-color: black;
   }
 
   .sidebarMenu{
@@ -124,9 +125,3 @@
      padding-left: 10px;;
    border-bottom: 1px solid #BBBBBB;
  }
-
-
-
-
- 
-  
