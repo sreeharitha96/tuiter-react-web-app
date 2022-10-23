@@ -11,7 +11,7 @@ const WhoToFollowList = () => {
      <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
        <div class="row" >
           <div class="col-7">
-         <span> <img src="java.png" 
+         <span> <img src="/images/java.png" 
            style="border-radius: 50px; padding-top: 0px;"
            width="30px"
            height="30px"/></span>
@@ -28,7 +28,7 @@ const WhoToFollowList = () => {
      <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
        <div class="row" >
           <div class="col-7">
-         <span> <img src="relativityspace.png" 
+         <span> <img src="/images/relativityspace.png" 
            style="border-radius: 50px; padding-top: 0px;"
            width="30px"
            height="30px"/></span>
@@ -45,7 +45,7 @@ const WhoToFollowList = () => {
      <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
        <div class="row" >
           <div class="col-7">
-         <span> <img src="virgin.png" 
+         <span> <img src="/images/virgin.png" 
            style="border-radius: 50px; padding-top: 0px;"
            width="30px"
            height="30px"/></span>
@@ -62,7 +62,7 @@ const WhoToFollowList = () => {
      <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
        <div class="row">
           <div class="col-7">
-         <span> <img src="nasa.png" 
+         <span> <img src="/images/nasa.png" 
            style="border-radius: 50px; padding-top: 0px;"
            width="30px"
            height="30px"/></span>
@@ -79,7 +79,7 @@ const WhoToFollowList = () => {
      <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
        <div class="row" >
           <div class="col-7">
-         <span> <img src="tesla.png" 
+         <span> <img src="/images/tesla.png" 
            style="border-radius: 50px; padding-top: 0px;"
            width="30px"
            height="30px"/></span>

@@ -1,36 +1,50 @@
 import logo from './logo.svg';
 import './App.css';
+import Labs from './labs/index.js';
+import HelloWorld from './labs/a6/hello-world';
+import Tuiter from './tuiter';
+import {BrowserRouter} from "react-router-dom";
+import {Routes, Route} from "react-router";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>
-          Welcome to Web Dev!
-        </h1>
-        <a href="labs/a2/index.html">
-         Assignment 2
-        </a>
-        <a href="labs/a3/index.html">
-         Assignment 3
-        </a>
-        <a href="labs/a4/index.html">
-         Assignment 4
-        </a>
-        <a href="labs/a5/index.html">
-         Assignment 5
-        </a>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <BrowserRouter>
+    <div className="container">
+    <Routes>   
+      <Route index element={<Labs/>}/>S
+      <Route path ="/hello" element={<HelloWorld/>}/>
+      <Route path="/tuiter/*" element={<Tuiter/>}/>
+    </Routes>
     </div>
+    </BrowserRouter>
+    // <div className="App">
+    //   <header className="App-header">
+    //     <img src={logo} className="App-logo" alt="logo" />
+    //     <h1>
+    //       Welcome to Web Dev!
+    //     </h1>
+    //     <a href="labs/a2/index.html">
+    //      Assignment 2
+    //     </a>
+    //     <a href="labs/a3/index.html">
+    //      Assignment 3
+    //     </a>
+    //     <a href="labs/a4/index.html">
+    //      Assignment 4
+    //     </a>
+    //     <a href="labs/a5/index.html">
+    //      Assignment 5
+    //     </a>
+    //     <a
+    //       className="App-link"
+    //       href="https://reactjs.org"
+    //       target="_blank"
+    //       rel="noopener noreferrer"
+    //     >
+    //       Learn React
+    //     </a>
+    //   </header>
+    // </div>
   );
 }
 
