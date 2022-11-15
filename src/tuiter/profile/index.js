@@ -1,29 +1,14 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import {Link} from "react-router-dom";
+import { useNavigate } from "react-router";
 
-const ProfileComponent = (
- {
-   profile =  {
-    "firstName": "Jose", 
-    "lastName": "Annunziato", 
-    "handle": "@jannunzi",
-    "profilePicture": "java.png", 
-    "bannerPicture": "rocket.png",
-    "bio": "Faculty, Software Engineer, AI, Space, and renewable enthusiast. Retuits and likes are not endorsements.",
-    "website": "youtube.com/webdevtv",
-    "location": "Boston, MA",
-    "dateOfBirth": "7/7/1968",	
-    "dateJoined": "4/2009",
-    "followingCount": 340,
-    "followersCount": 223
-  }
- }
-  ) => {
 
+const ProfileComponent = () => {
+ const profile= useSelector(store => store.profile);
+ const navigate= useNavigate();
  const edit =()=> {
-     <Link to="/tuiter/home">
-       Home
-     </Link>
+    navigate("/tuiter/editprofile");
  }
  return(
    <div className="container">
@@ -41,9 +26,8 @@ const ProfileComponent = (
      </div>
 
      <div> 
-<a href="/tuiter/editprofile">
-  <button type="button" class="btn btn-primary float-end"> Edit Profile </button>
-</a>
+  <button type="button" class="btn btn-primary float-end" onClick={edit}> Edit Profile </button>
+
 <br/>
 <br/>
      </div> 

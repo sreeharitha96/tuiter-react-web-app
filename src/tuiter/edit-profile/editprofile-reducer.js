@@ -6,9 +6,13 @@ const profileSlice = createSlice({
  initialState: profile,
  reducers: {
    createProfile(state, action) {
-     state.unshift({
-       ...action.payload,
-     })
+     const data = {
+       ...state,
+       ...action.payload
+     }
+     
+     console.log(data, "From red");
+     return data;
    }
  }
 });
