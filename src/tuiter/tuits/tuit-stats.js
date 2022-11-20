@@ -1,4 +1,7 @@
 import React from "react";
+import {updateTuitThunk} from "../../services/tuits-thunks";
+import {useDispatch} from "react-redux";
+
 const TuitStats = (
  {
    tuit = {
@@ -17,25 +20,30 @@ const TuitStats = (
     }
  }
 ) => {
+   const dispatch = useDispatch();
  return(
-     <>
   <div class="d-inline">
      <span><i class="bi bi-chat"> </i> {tuit.replies} </span> &nbsp;&nbsp;&nbsp;
      
       <span><i class="bi bi-repeat"></i> {tuit.retuits} </span> &nbsp;&nbsp;&nbsp;
      
-     <button type="button" id="demo" onclick="myFunction()" class="btn btn-light"><span class="bi bi-heart"></span> </button>{tuit.likes} &nbsp;&nbsp;&nbsp;
+     {/* <button type="button" id="demo" onclick="myFunction()" class="btn btn-light"><span class="bi bi-heart"></span> </button>{tuit.likes} &nbsp;&nbsp;&nbsp; */}
 
+     <span>
+     Likes: {tuit.likes}
+     <i onClick={() => dispatch(updateTuitThunk({
+       ...tuit,
+       likes: tuit.likes + 1
+     }))} className="bi bi-heart-fill me-2 text-danger"></i>
+   </span>
+
+   &nbsp;&nbsp;&nbsp;
       <span><i class="bi bi-share"></i> </span>&nbsp;&nbsp;&nbsp;
 
      </div>
-     {/* <script>
-     function myFunction() {
-      document.getElementById("demo").style.color = 'red'
-     }
-     </script> */}
 
-  </>
+
+ 
 
  );
 };

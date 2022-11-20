@@ -5,6 +5,7 @@ import PostSummaryItem
 
 const PostSummaryList = () => {
   const postsArray = useSelector(state => state.tuits)
+  console.log(postsArray);
  return(
    <ul className="list-group">
      {
